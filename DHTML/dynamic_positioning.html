@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Positioning on a web page</title>
+
+    <script>
+        function start() {
+            var inputLeft = prompt("Enter the left position (e.g., 100px):", "");
+
+            var ptext = document.getElementById("ptext");
+
+            ptext.style.position = "absolute";  // required for positioning
+            ptext.style.left = inputLeft;
+        }
+    </script>
+</head>
+
+<body onload="start()">
+
+    <p id="ptext">Move me horizontally!</p>
+
+</body>
+</html>
