@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fade Out Text</title>
+
+	<style>
+		#textInput {
+			width: 300px;
+			transition: opacity 1s ease;
+			cursor: pointer;
+		}
+
+		.fade-out {
+			opacity: 0;
+		}
+	</style>
+
+	<script>
+		function blendOut() {
+			const el = document.getElementById("textInput");
+			el.classList.add("fade-out");
+		}
+	</script>
+</head>
+
+<body>
+
+	<div id="textInput" onclick="blendOut()">
+		<h1>This text will start fading after a user click on it.</h1>
+	</div>
+
+</body>
+</html>

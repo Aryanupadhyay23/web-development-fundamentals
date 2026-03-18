@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Filters</title>
+
+	<style>
+		table {
+			text-align: center;
+		}
+
+		img {
+			height: 200px;
+		}
+
+		.gray {
+			filter: grayscale(100%);
+		}
+
+		.invert {
+			filter: invert(100%);
+		}
+
+		.xray {
+			filter: invert(100%) grayscale(100%);
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1>Image Filters: Grayscale, X-ray & Invert</h1>
+
+	<table>
+		<tr>
+			<td>Normal</td>
+			<td>Grayscale</td>
+		</tr>
+
+		<tr>
+			<td>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq2Io_hZxZL0LM3KkymWaAXAfT41s0Dr7dvQ&s" alt="normal">
+			</td>
+			<td>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq2Io_hZxZL0LM3KkymWaAXAfT41s0Dr7dvQ&s" class="gray" alt="grayscale">
+			</td>
+		</tr>
+
+		<tr>
+			<td>X-ray</td>
+			<td>Invert</td>
+		</tr>
+
+		<tr>
+			<td>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq2Io_hZxZL0LM3KkymWaAXAfT41s0Dr7dvQ&s" class="xray" alt="xray">
+			</td>
+			<td>
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq2Io_hZxZL0LM3KkymWaAXAfT41s0Dr7dvQ&s" class="invert" alt="invert">
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>

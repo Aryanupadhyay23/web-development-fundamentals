@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Flip Example</title>
+
+	<style>
+		table {
+			font-size: 3em;
+			font-family: Arial, sans-serif;
+			background-color: #CCCCCC;
+			border-style: ridge;
+			border-collapse: collapse;
+		}
+
+		td {
+			border-style: groove;
+			padding: 1ex;
+		}
+
+		.flip-h {
+			transform: scaleX(-1);
+		}
+
+		.flip-v {
+			transform: scaleY(-1);
+		}
+
+		.flip-both {
+			transform: scale(-1, -1);
+		}
+	</style>
+</head>
+
+<body>
+
+	<h1 style="font-size: 16px;">
+		Below are some examples of flipping text using modern CSS
+	</h1>
+
+	<table>
+		<tr>
+			<td>DCSA, KUK</td>
+			<td class="flip-h">DCSA, KUK</td>
+		</tr>
+
+		<tr>
+			<td class="flip-both">DCSA, KUK</td>
+			<td class="flip-v">DCSA, KUK</td>
+		</tr>
+	</table>
+
+</body>
+</html>
